@@ -13,3 +13,224 @@
  *= require_tree .
  *= require_self
  */
+ .searchbar {
+   -webkit-font-smoothing: subpixel-antialiased;
+   position: relative;
+   width: 100%;
+   height: 80px;
+   padding: 0;
+   background: #FFFFFF;
+   min-width: 1000px;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1),0 0 0 1px rgba(0, 0, 0, 0.05);
+ }
+ body {
+   margin: 0 !important;
+   padding: 0 !important;
+ }
+ .innerbar{
+   background: white;
+   text-align: left;
+   height: 80px;
+   width: 980px;
+   margin: auto;
+ }
+.search{
+  border-spacing: 0;
+  border-collapse: collapse;
+  position: absolute;
+  display: table;
+  margin-left: 90px;
+  margin-top: 10px;
+  height: 40px;
+  float: left;
+  }
+ .etsylogo{
+   float: left;
+   width: 75px;
+   margin-right: 20px;
+   color: #D15600;
+   font-family: "Times New Roman", Georgia, Serif;
+   font-size: 40px;
+
+ }
+ .before{
+   height:15px;
+ }
+ .inputtext{
+   white-space: nowrap;
+   display: table-cell;
+   vertical-align: top;
+   width: 275px;
+ }
+.textbox{
+  width: 100%;
+  top: 50%;
+  border: 1px solid #CFCBC8;
+  border-radius:3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #f9f9f8;
+  font-family: Arial,Helvetica,sans-serif;
+  padding: 6px 10px;
+  margin-left: 0;
+  height: 34px;
+  font-size: 14px;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 2px #E9E9E8,0 0 0 1000px #fbfbfa inset;
+}
+.searchbutton{
+  border: 1px solid;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  line-height: 17px;
+  height: 34px;
+  font-family: Arial,Helvetica,sans-serif;
+  padding: 7px 15px 8px;
+  border-color: #54acc7 #4ca0ba #398a9d;
+  background: -webkit-linear-gradient(top, #98d0e0 2%, #68b8d1 8%, #4fa9c6 58%, #4fa9c6 95%, #4ca4c0);
+  color: #FFF;
+  text-decoration: none;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.content{
+  width: 980px;
+  height: 200px;
+  color:yellow;
+  margin:auto;
+  visibility: visible;
+}
+
+.header{
+  background-color: white;
+  width = 100%;
+  height = 80 px;
+  position: relative
+}
+
+.sidebar{
+  width: 224px;
+  /*margin-right: 28px;*/
+  float: left;
+  text-align: left;
+  height: 200px;
+}
+.resultssection{
+  width: 728px;
+  height: 100px;
+  float:left;
+}
+.categoriesheader{
+  font-weight: bold;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.infobar{
+  font-size: 14px;
+  margin-bottom:-7px;
+  margin-top: 30px;
+  color: #0192b5;
+  font-family: Arial,Helvetica,sans-serif;
+
+}
+.categoriesbox{
+  background-color: #fff;
+  margin-top: 10px;
+  margin-right: -10px;
+  border-radius: 3px;
+  padding: 0px 0px 0px 0px;
+  border: 1px solid #ececec;
+  padding-left:0px;
+}
+.categorytitle{
+  font-weight: bold;
+  font-size: 15px;
+  color: #666;
+  text-align:left;
+  list-style: none;
+  float: left;
+  padding-left: 5px;
+  padding-right:120px;
+
+}
+.categories{
+  padding-left:5px;
+  padding-top:0px;
+  list-style: none;
+
+}
+.allcategories{
+  padding:20px;
+  padding-right:0px;
+  color: #0192b5;
+  line-height: 17px;
+  font-size: 15px;
+
+}
+
+.results{
+  width: 910px;
+  margin-bottom: 14px;
+  float: left;
+}
+.placement{
+  margin-top:0px;
+}
+
+.box{
+  width: 224px;
+  position: relative;
+  margin-left:0px;
+  margin-right: 28px;
+  margin-bottom: 18px;
+  margin-top:0px;
+  float: left;
+  list-style: none;
+  border: 1px solid #ecece;
+  background-color: white;
+}
+
+.image{
+  align: center;
+  border: 4px solid white;
+  border-bottom: none;
+}
+
+.productname{
+  padding: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: Arial, helvetica, sans-serif;
+  width: 210px;
+  font-size: 12px;
+  color: #666666;
+  height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price{
+  padding: 6px;
+  padding-top: 2px;
+  font-family: Arial, helvetica, sans-serif;
+  font-size: 12px;
+  float: right;
+  color: #78c042;
+}
+.shop{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  color: #b2b2b2;
+  font-family: "Arial","Helvetica",sans-serif;
+  font-size: 12px;
+}

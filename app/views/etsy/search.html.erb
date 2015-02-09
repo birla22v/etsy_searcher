@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etsy</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body bgcolor="#F5F5F1" >
+  <header bgcolor="#FFFFFF">
+    <div class="searchbar">
+      <div class="innerbar">
+        <div class="before">
+        </div>
+        <div class = "etsylogo">
+          Etsy
+        </div>
+        <div class= "search">
+          <div class = "inputtext">
+            <input class = "textbox">
+          </div>
+          <div>
+            <button class="searchbutton"> Search </button>
+          </div>
+        </div>
+        <div class = "browse">
+        </div>
+        <div class = "register">
+        </div>
+        <div class="after">
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+  <div class ="content">
+    <div class="sidebar">
+      <h3 class="categoriesheader">
+
+        Show results for:
+
+      </h3>
+      <div class="categoriesbox">
+        <ul class="categories">
+          <li><span class="categorytitle">All Categories</span></li>
+          <li><span class="allcategories">Home & Living</span></li>
+          <li><span class="allcategories">Art & Collectibles</span></li>
+          <li><span class="allcategories">Weddings</span></li>
+          <li><span class="allcategories">Craft Supplies & Tools</span></li>
+          <li><span class="allcategories">Accessories</span></li>
+          <li><span class="allcategories">Jewelry</span></li>
+          <li><span class="allcategories">Clothing</span></li>
+          <li><span class="allcategories">Paper goods & Party supplies</span></li>
+          <li><span class="allcategories">Bags & Purses</span></li>
+          <li><span class="allcategories">Bath & Beauty</span></li>
+          <li><span class="allcategories">Shoes</span></li>
+          <li><span class="allcategories">Electronics & Accessories</span></li>
+          <li><span class="allcategories">Books, Movies & Music</span></li>
+          <li><span class="allcategories">Pet Supplies</span></li>
+        </ul>
+      </div>
+      <h3 class ="categoriesheader">
+
+        Refine your search
+        <div class="categoriesbox">
+          <ul class="categories">
+            <li><span class="categorytitle">Item Type</span></li>
+            <li><span class="allcategories"><input type="radio" value checked="checked"> All Items</span></li>
+            <li><span class="allcategories"><input type="radio"> Handmade</span></li>
+            <li><span class="allcategories"><input type="radio"> Vintage</span></li>
+          </ul>
+        </div>
+
+      </h3>
+    </div>
+    <div class="resultssection">
+      <div class="infobar">
+         <span style="color:transparent">"span"</span>All categories <span style="font-weight:bold"> > <span style="color:#666">"whiskey" </span></span>
+         <span style="color:#666"> (20,513) Results</span>
+      </div>
+      <div class="results">
+        <% if @results %>
+        <% @results.each do |r| %>
+        <ol>
+          <div class="box">
+            <li>
+
+              <div class="image">
+                <img style= "height: 170px; width: 216px;" src=<%= r["Images"][0]["url_170x135"] %>>
+              </div>
+
+              <div class="productname">
+                <%= r["title"] %>
+              </div>
+
+
+              <div class="price">
+                $<%= r["price"] %> USD
+              </div>
+
+              <div class = "shop">
+                <%= r["Shop"]["shop_name"] %>
+              </div>
+
+            </li>
+          </div>
+        </ol>
+        <% end %>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
